@@ -9,6 +9,7 @@ import {FormsModule} from '@angular/forms';
 import {IncrementComponent} from '../components/increment/increment.component';
 import {ChartsModule} from 'ng2-charts';
 import {GraphCircleComponent} from '../components/graph-circle/graph-circle.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {GraphCircleComponent} from '../components/graph-circle/graph-circle.comp
     PagesComponent,
     GraphFirstComponent,
     GraphCircleComponent,
-    IncrementComponent
+    IncrementComponent,
+    AccountSettingsComponent
   ],
   imports: [
     SharedModule,

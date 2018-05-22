@@ -8,6 +8,8 @@ import { RegisterComponent } from './login/register.component';
 import {PagesModule} from './pages/pages.module';
 import {SharedModule} from './shared/shared.module';
 import {NoPageFoundComponent} from './shared/no-page-found/no-page-found.component';
+import {ServiceModule} from './services/service.module';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import {NoPageFoundComponent} from './shared/no-page-found/no-page-found.compone
     BrowserModule,
     APP_ROUTES,
     SharedModule,
-    PagesModule
+    PagesModule,
+    ServiceModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
