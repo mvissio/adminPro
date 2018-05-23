@@ -10,6 +10,8 @@ import {IncrementComponent} from '../components/increment/increment.component';
 import {ChartsModule} from 'ng2-charts';
 import {GraphCircleComponent} from '../components/graph-circle/graph-circle.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     GraphFirstComponent,
     GraphCircleComponent,
     IncrementComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   imports: [
     SharedModule,

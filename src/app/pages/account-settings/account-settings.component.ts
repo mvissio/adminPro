@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {SettingsService} from '../../services/service.index';
+import {DOCUMENT} from '@angular/common';
 
 
 @Component({
@@ -22,7 +23,7 @@ export class AccountSettingsComponent implements OnInit {
   }
 
   onAddCheck(link: any) {
-    let selectors = document.getElementsByClassName('selector');
+    let selectors: HTMLCollectionOf<Element> = document.getElementsByClassName('selector');
     for (let ref of selectors) {
       ref.classList.remove('working');
     }
@@ -30,7 +31,7 @@ export class AccountSettingsComponent implements OnInit {
   }
 
   onUseCheck() {
-    let selectors = document.getElementsByClassName('selector');
+    let selectors: HTMLCollectionOf<Element> = document.getElementsByClassName('selector');
     let theme = this._settings.settings.theme;
 
     for (let ref of selectors) {
