@@ -23,7 +23,7 @@ export class AccountSettingsComponent implements OnInit {
   }
 
   onAddCheck(link: any) {
-    let selectors: HTMLCollectionOf<Element> = document.getElementsByClassName('selector');
+    let selectors: any = document.getElementsByClassName('selector');
     for (let ref of selectors) {
       ref.classList.remove('working');
     }
@@ -31,7 +31,7 @@ export class AccountSettingsComponent implements OnInit {
   }
 
   onUseCheck() {
-    let selectors: HTMLCollectionOf<Element> = document.getElementsByClassName('selector');
+    let selectors: any = document.getElementsByClassName('selector');
     let theme = this._settings.settings.theme;
 
     for (let ref of selectors) {
